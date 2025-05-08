@@ -1,0 +1,214 @@
+/* Reset dan font */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: #f0f4f9;
+
+  color: #333;
+
+  padding: 20px;
+
+}
+
+
+
+/* Judul utama */
+
+h1 {
+
+  text-align: center;
+
+  font-size: 2rem;
+
+  margin-bottom: 30px;
+
+  color: #1f3a93;
+
+}
+
+
+
+/* Tombol kembali */
+
+.back-button {
+
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  background-color: #e3eaf5;
+
+  color: #1f3a93;
+
+  padding: 8px 14px;
+
+  border-radius: 8px;
+
+  transition: background-color 0.3s ease;
+
+}
+
+
+
+.back-button:hover {
+
+  background-color: #cbd9f1;
+
+}
+
+
+
+/* Kontrol form */
+
+.controls {
+
+  max-width: 600px;
+
+  margin: 0 auto 30px;
+
+  background-color: #ffffff;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+.controls label {
+
+  display: block;
+
+  font-weight: 500;
+
+  margin-bottom: 8px;
+
+  margin-top: 15px;
+
+}
+
+
+
+.controls select,
+
+.controls input[type="number"],
+
+.controls input[type="color"] {
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #ccd6e0;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  transition: border-color 0.3s ease;
+
+}
+
+
+
+.controls select:focus,
+
+.controls input[type="number"]:focus,
+
+.controls input[type="color"]:focus {
+
+  border-color: #1f3a93;
+
+  outline: none;
+
+}
+
+
+
+.controls input[type="color"] {
+
+  height: 40px;
+
+  cursor: pointer;
+
+}
+
+
+
+/* Tombol generate */
+
+#generateBtn {
+
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 12px;
+
+  background-color: #1f3a93;
+
+  color: white;
+
+  font-weight: 600;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+}
+
+
+
+#generateBtn:hover {
+
+  background-color: #163074;
+
+}
+
+
+
+/* Canvas */
+
+canvas {
+
+  display: block;
+
+  margin: 30px auto 0;
+
+  width: 100%;
+
+  max-width: 800px;
+
+  border-radius: 12px;
+
+  border: 1px solid #ccd6e0;
+
+}
+
