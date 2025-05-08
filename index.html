@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Frieze Pattern Generator</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+  <h1>Frieze Pattern Generator</h1>
+
+
+
+  <a href="beranda.html" class="back-button"> KEMBALI </a>
+
+
+
+  <label>Jenis Grup Frieze:</label>
+
+  <select id="friezeGroup">
+
+    <option value="p1">P1 - Translasi</option>
+
+    <option value="pm">Pm - Refleksi Vertikal</option>
+
+    <option value="pg">Pg - Glide Reflection</option>
+
+    <option value="pmm">Pmm - Dua Refleksi</option>
+
+    <option value="pmg">Pmg - Refleksi & Glide</option>
+
+    <option value="p2">P2 - Translasi Saja</option>
+
+    <option value="p4">P4 - Rotasi & Refleksi</option>
+
+  </select>
+
+  
+
+
+
+  <br /><br />
+
+
+
+  <label>Bentuk 1:</label>
+
+  <select id="shape">
+
+    <option value="triangle">Segitiga</option>
+
+    <option value="square">Persegi</option>
+
+    <option value="circle">Lingkaran</option>
+
+    <option value="rhombus">Ketupat</option>
+
+    <option value="parallelogram">Jajar Genjang</option>
+
+    <option value="arc">Garis Lengkung</option>
+
+    <option value="star">Bintang</option>
+
+    <option value="heart">Hati</option>
+
+    <option value="spiral">Spiral</option>
+
+  </select>
+
+
+
+  <label>Warna Bentuk 1:</label>
+
+  <input type="color" id="color1" value="#00bcd4" />
+
+
+
+  <br /><br />
+
+
+
+  <label>Bentuk 2 (opsional):</label>
+
+  <select id="shape2">
+
+    <option value="">(Tidak Ada)</option>
+
+    <option value="triangle">Segitiga</option>
+
+    <option value="square">Persegi</option>
+
+    <option value="circle">Lingkaran</option>
+
+    <option value="rhombus">Ketupat</option>
+
+    <option value="parallelogram">Jajar Genjang</option>
+
+    <option value="arc">Garis Lengkung</option>
+
+    <option value="star">Bintang</option>
+
+    <option value="heart">Hati</option>
+
+    <option value="spiral">Spiral</option>
+
+  </select>
+
+
+
+  <label>Warna Bentuk 2:</label>
+
+  <input type="color" id="color2" value="#f44336" />
+
+
+
+  <br /><br />
+
+
+
+  <label>Jumlah Ulangan:</label>
+
+  <input type="number" id="repeatCount" value="10" min="1" max="50"/>
+
+
+
+  <label for="rowCount">Jumlah Baris Frieze:</label>
+
+<input type="number" id="rowCount" value="1" min="1" />
+
+
+
+
+
+  <br /><br />
+
+  <button onclick="generate()">Generate Motif</button>
+
+
+
+  <br /><br />
+
+  <canvas id="patternCanvas" width="1000" height="600" style="border: 1px solid #000;"></canvas>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+ 
